@@ -6,7 +6,7 @@
 
 
 ------------------
-muCommander v1.4.0
+muCommander v1.5.0
 ------------------
 
 muCommander is a lightweight, cross-platform file manager with a dual-pane interface.
@@ -28,33 +28,21 @@ If you're having problems launching muCommander, make sure the JAVA_HOME environ
 where your Java runtime is installed.
 
 
-What's new since v1.3.0 ?
+What's new since v1.4.1 ?
 -----------------------
 
 New features:
-- Added Google Cloud Storage as a file protocol that enables browsing and managing files in GCS buckets.
-- Added optional keyboard shortcut visual hints for actions invoked by clicks rather than keyboard.
-- Added OneDrive as a file protocol (including browsing, uploading and downloading capabilities).
-- Added Apple Disk Image file (dmg) for aarch64.
+-
 
 Improvements:
-- Faster start-up of muCommander (2-3 times faster)
-- The 'Space' key can be used to filter filenames with spaces in quick search. Files can be selected during an ongoing
-  quick search using CTRL+Space (that was replaced with CTRL+SHIFT+Space for 'Popup menu' action).
-- Changed 'Store login and password' to 'Store credentials' to reflect that additional properties, like ssh-key, are also stored.
-- Set Shift+F4 as the default alternative keyboard shortcut for "Make file" action.
-- Command line (of Terminal) it can be now visible in folder view  
-- Authenticate with the specified ssh-key when connecting to a different path on a server via SFTP from the location bar.
-- The RPM package is now signed.
+- Don't show warning message about too large file while previewing images files.
+-
 
 Localization:
 -
 
 Bug fixes:
-- Fixed copying files to Finder.
-- Fixed drag-and-drop of action buttons in the 'Customize command bar' dialog.
-- Fixed Toolbar and Command bar actions not being updated when their shortcuts changed in Preferences.
-- Fixed incorrect block selection (using shift + click) on native L&Fs
+-
 
 Known issues:
 - Some translations may not be up-to-date.
@@ -74,9 +62,6 @@ Known issues:
 - macOS: some keyboard shortcuts may conflict with global system shortcuts.
 - Installing the deb package on Debian < 12 fails with: "error: archive ... uses unknown compression for member 'control.tar.zst', giving up".
   A possible workaround is described in: https://unix.stackexchange.com/a/745467.
-- The application fails to run when installed from a dmg package with the error: "muCommander" is damaged and can't be opened.
-  On macOS Ventura, grant permission to the Terminal in Settings>Privacy & Security>App Management and run: sudo xattr -cr /Applications/muCommander.app.
-  On older versions of macOS, run: sudo xattr -dr com.apple.quarantine /Applications/muCommander.app.
 
 License
 -------
